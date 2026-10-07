@@ -19,7 +19,7 @@ import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const rulesDir = join(root, "rules");
+const rulesDir = join(root, "plugins", "typescript-antislop", "rules");
 const testsDir = join(root, "tests");
 const verbose = process.argv.includes("--verbose");
 
