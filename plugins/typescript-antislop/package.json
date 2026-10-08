@@ -1,6 +1,6 @@
 {
   "name": "omp-typescript-antislop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Opinionated TypeScript TTSR rules for omp, ported from dmmulroy/anti-slop",
   "license": "MIT",
   "repository": "github:rstacruz/omp-typescript-antislop"
