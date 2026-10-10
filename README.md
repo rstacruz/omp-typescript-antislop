@@ -1,7 +1,7 @@
 # omp-typescript-antislop
 
-Opinionated TypeScript rules for [omp](https://github.com/can1357/oh-my-pi), ported from
-[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) — the primary source for every rule here.
+Opinionated TypeScript rules for [omp](https://github.com/can1357/oh-my-pi), all ported from
+[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop).
 
 Like the original, it's meant to be vendored, not adopted wholesale: take the rules you want, read
 them, and change them to match your taste.
@@ -20,7 +20,7 @@ cp plugins/typescript-antislop/rules/ts-no-module-mocking.md ~/.omp/agent/rules/
 ./install.sh
 ```
 
-A plugin install is also available when you want versioned upgrades and enable/disable:
+Or install it as a plugin for versioned upgrades:
 
 ```sh
 omp plugin marketplace add rstacruz/omp-typescript-antislop
@@ -35,7 +35,7 @@ node test.mjs  # each rule must fire on its fixtures, and stay silent on `negati
 
 ## Rules
 
-Six rules interrupt the tool call before it runs; the rest are advisory (`interruptMode: never`) and
+Six rules interrupt the tool call before it runs. The rest are advisory (`interruptMode: never`) and
 arrive as a reminder after the result.
 
 [`ts-no-array-filter-map`](./plugins/typescript-antislop/rules/ts-no-array-filter-map.md) &mdash; rejects eager filter() and map() chains
